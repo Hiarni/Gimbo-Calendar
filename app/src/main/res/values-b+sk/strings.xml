@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gimbo_4d5fe285ee1a">Nová poznámka</string>
+    <string name="gimbo_4e1e15e17610">Kategórie</string>
+    <string name="gimbo_5aab5a8bd851">Spoločne</string>
+    <string name="gimbo_6e5d3eca855c">Poznámkový blok</string>
+    <string name="gimbo_7e458d013900">Poznámky</string>
+    <string name="gimbo_b70135a46abd">Kontrolný zoznam</string>
+    <string name="gimbo_cb27327d0207">Prehľad</string>
+    <string name="next_b1cfc8318a">Zdieľať</string>
+    <string name="next_c667f1f22a">Úlohy</string>
+    <string name="settings_label">Nastavenia</string>
+    <string name="text_abbrechen_07af7">Zrušiť</string>
+    <string name="text_agenda_891e9">Agenda</string>
+    <string name="text_alle_4c7a9">Všetko</string>
+    <string name="text_bearbeiten_104f3">Upraviť</string>
+    <string name="text_entfernen_f78b6">Odstrániť</string>
+    <string name="text_feiertag_ad6e4">Sviatok</string>
+    <string name="text_heute_1ab33">Dnes</string>
+    <string name="text_hinzufugen_f0d37">Pridať</string>
+    <string name="text_kalender_33fe9">Kalendár</string>
+    <string name="text_monat_da136">Mesiac</string>
+    <string name="text_neuer_termin_d4e7b">Nová udalosť</string>
+    <string name="text_schlieen_44424">Zavrieť</string>
+    <string name="text_speichern_70b73">Uložiť</string>
+    <string name="text_sprache_b28f6">JAZYK</string>
+    <string name="text_suche_fd281">Hľadať</string>
+    <string name="text_systemsprache_ef9a1">Jazyk systému</string>
+    <string name="text_tag_98296">Deň</string>
+    <string name="text_woche_7b220">Týždeň</string>
+    <string name="text_zuruck_40806">Späť</string>
+</resources>

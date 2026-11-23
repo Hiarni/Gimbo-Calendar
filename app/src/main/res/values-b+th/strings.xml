@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gimbo_4d5fe285ee1a">บันทึกใหม่</string>
+    <string name="gimbo_4e1e15e17610">หมวดหมู่</string>
+    <string name="gimbo_5aab5a8bd851">ร่วมกัน</string>
+    <string name="gimbo_6e5d3eca855c">สมุดบันทึก</string>
+    <string name="gimbo_7e458d013900">บันทึก</string>
+    <string name="gimbo_b70135a46abd">รายการตรวจสอบ</string>
+    <string name="gimbo_cb27327d0207">ภาพรวม</string>
+    <string name="next_b1cfc8318a">แชร์</string>
+    <string name="next_c667f1f22a">งาน</string>
+    <string name="settings_label">การตั้งค่า</string>
+    <string name="text_abbrechen_07af7">ยกเลิก</string>
+    <string name="text_agenda_891e9">กำหนดการ</string>
+    <string name="text_alle_4c7a9">ทั้งหมด</string>
+    <string name="text_bearbeiten_104f3">แก้ไข</string>
+    <string name="text_entfernen_f78b6">ลบ</string>
+    <string name="text_feiertag_ad6e4">วันหยุด</string>
+    <string name="text_heute_1ab33">วันนี้</string>
+    <string name="text_hinzufugen_f0d37">เพิ่ม</string>
+    <string name="text_kalender_33fe9">ปฏิทิน</string>
+    <string name="text_monat_da136">เดือน</string>
+    <string name="text_neuer_termin_d4e7b">กิจกรรมใหม่</string>
+    <string name="text_schlieen_44424">ปิด</string>
+    <string name="text_speichern_70b73">บันทึก</string>
+    <string name="text_sprache_b28f6">ภาษา</string>
+    <string name="text_suche_fd281">ค้นหา</string>
+    <string name="text_systemsprache_ef9a1">ภาษาของระบบ</string>
+    <string name="text_tag_98296">วัน</string>
+    <string name="text_woche_7b220">สัปดาห์</string>
+    <string name="text_zuruck_40806">ย้อนกลับ</string>
+</resources>

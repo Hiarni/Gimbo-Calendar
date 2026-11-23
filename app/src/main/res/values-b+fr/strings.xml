@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gimbo_4d5fe285ee1a">Nouvelle note</string>
+    <string name="gimbo_4e1e15e17610">Catégories</string>
+    <string name="gimbo_5aab5a8bd851">Ensemble</string>
+    <string name="gimbo_6e5d3eca855c">Bloc-notes</string>
+    <string name="gimbo_7e458d013900">Notes</string>
+    <string name="gimbo_b70135a46abd">Liste de contrôle</string>
+    <string name="gimbo_cb27327d0207">Vue d’ensemble</string>
+    <string name="next_b1cfc8318a">Partager</string>
+    <string name="next_c667f1f22a">Tâches</string>
+    <string name="settings_label">Paramètres</string>
+    <string name="text_abbrechen_07af7">Annuler</string>
+    <string name="text_agenda_891e9">Agenda</string>
+    <string name="text_alle_4c7a9">Tout</string>
+    <string name="text_bearbeiten_104f3">Modifier</string>
+    <string name="text_entfernen_f78b6">Supprimer</string>
+    <string name="text_feiertag_ad6e4">Jour férié</string>
+    <string name="text_heute_1ab33">Aujourd’hui</string>
+    <string name="text_hinzufugen_f0d37">Ajouter</string>
+    <string name="text_kalender_33fe9">Calendrier</string>
+    <string name="text_monat_da136">Mois</string>
+    <string name="text_neuer_termin_d4e7b">Nouvel événement</string>
+    <string name="text_schlieen_44424">Fermer</string>
+    <string name="text_speichern_70b73">Enregistrer</string>
+    <string name="text_sprache_b28f6">LANGUE</string>
+    <string name="text_suche_fd281">Rechercher</string>
+    <string name="text_systemsprache_ef9a1">Langue du système</string>
+    <string name="text_tag_98296">Jour</string>
+    <string name="text_woche_7b220">Semaine</string>
+    <string name="text_zuruck_40806">Retour</string>
+</resources>

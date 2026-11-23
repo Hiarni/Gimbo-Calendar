@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gimbo_4d5fe285ee1a">یادداشت جدید</string>
+    <string name="gimbo_4e1e15e17610">دسته‌ها</string>
+    <string name="gimbo_5aab5a8bd851">با هم</string>
+    <string name="gimbo_6e5d3eca855c">دفتر یادداشت</string>
+    <string name="gimbo_7e458d013900">یادداشت‌ها</string>
+    <string name="gimbo_b70135a46abd">فهرست بررسی</string>
+    <string name="gimbo_cb27327d0207">نمای کلی</string>
+    <string name="next_b1cfc8318a">اشتراک‌گذاری</string>
+    <string name="next_c667f1f22a">کارها</string>
+    <string name="settings_label">تنظیمات</string>
+    <string name="text_abbrechen_07af7">لغو</string>
+    <string name="text_agenda_891e9">برنامه روزانه</string>
+    <string name="text_alle_4c7a9">همه</string>
+    <string name="text_bearbeiten_104f3">ویرایش</string>
+    <string name="text_entfernen_f78b6">حذف</string>
+    <string name="text_feiertag_ad6e4">تعطیل رسمی</string>
+    <string name="text_heute_1ab33">امروز</string>
+    <string name="text_hinzufugen_f0d37">افزودن</string>
+    <string name="text_kalender_33fe9">تقویم</string>
+    <string name="text_monat_da136">ماه</string>
+    <string name="text_neuer_termin_d4e7b">رویداد جدید</string>
+    <string name="text_schlieen_44424">بستن</string>
+    <string name="text_speichern_70b73">ذخیره</string>
+    <string name="text_sprache_b28f6">زبان</string>
+    <string name="text_suche_fd281">جستجو</string>
+    <string name="text_systemsprache_ef9a1">زبان سیستم</string>
+    <string name="text_tag_98296">روز</string>
+    <string name="text_woche_7b220">هفته</string>
+    <string name="text_zuruck_40806">بازگشت</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gimbo_4d5fe285ee1a">Νέα σημείωση</string>
+    <string name="gimbo_4e1e15e17610">Κατηγορίες</string>
+    <string name="gimbo_5aab5a8bd851">Μαζί</string>
+    <string name="gimbo_6e5d3eca855c">Σημειωματάριο</string>
+    <string name="gimbo_7e458d013900">Σημειώσεις</string>
+    <string name="gimbo_b70135a46abd">Λίστα ελέγχου</string>
+    <string name="gimbo_cb27327d0207">Επισκόπηση</string>
+    <string name="next_b1cfc8318a">Κοινοποίηση</string>
+    <string name="next_c667f1f22a">Εργασίες</string>
+    <string name="settings_label">Ρυθμίσεις</string>
+    <string name="text_abbrechen_07af7">Ακύρωση</string>
+    <string name="text_agenda_891e9">Ατζέντα</string>
+    <string name="text_alle_4c7a9">Όλα</string>
+    <string name="text_bearbeiten_104f3">Επεξεργασία</string>
+    <string name="text_entfernen_f78b6">Διαγραφή</string>
+    <string name="text_feiertag_ad6e4">Αργία</string>
+    <string name="text_heute_1ab33">Σήμερα</string>
+    <string name="text_hinzufugen_f0d37">Προσθήκη</string>
+    <string name="text_kalender_33fe9">Ημερολόγιο</string>
+    <string name="text_monat_da136">Μήνας</string>
+    <string name="text_neuer_termin_d4e7b">Νέο συμβάν</string>
+    <string name="text_schlieen_44424">Κλείσιμο</string>
+    <string name="text_speichern_70b73">Αποθήκευση</string>
+    <string name="text_sprache_b28f6">ΓΛΩΣΣΑ</string>
+    <string name="text_suche_fd281">Αναζήτηση</string>
+    <string name="text_systemsprache_ef9a1">Γλώσσα συστήματος</string>
+    <string name="text_tag_98296">Ημέρα</string>
+    <string name="text_woche_7b220">Εβδομάδα</string>
+    <string name="text_zuruck_40806">Πίσω</string>
+</resources>

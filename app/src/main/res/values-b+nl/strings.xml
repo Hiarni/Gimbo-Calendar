@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gimbo_4d5fe285ee1a">Nieuwe notitie</string>
+    <string name="gimbo_4e1e15e17610">Categorieën</string>
+    <string name="gimbo_5aab5a8bd851">Samen</string>
+    <string name="gimbo_6e5d3eca855c">Notitieblok</string>
+    <string name="gimbo_7e458d013900">Notities</string>
+    <string name="gimbo_b70135a46abd">Checklist</string>
+    <string name="gimbo_cb27327d0207">Overzicht</string>
+    <string name="next_b1cfc8318a">Delen</string>
+    <string name="next_c667f1f22a">Taken</string>
+    <string name="settings_label">Instellingen</string>
+    <string name="text_abbrechen_07af7">Annuleren</string>
+    <string name="text_agenda_891e9">Agenda</string>
+    <string name="text_alle_4c7a9">Alles</string>
+    <string name="text_bearbeiten_104f3">Bewerken</string>
+    <string name="text_entfernen_f78b6">Verwijderen</string>
+    <string name="text_feiertag_ad6e4">Feestdag</string>
+    <string name="text_heute_1ab33">Vandaag</string>
+    <string name="text_hinzufugen_f0d37">Toevoegen</string>
+    <string name="text_kalender_33fe9">Kalender</string>
+    <string name="text_monat_da136">Maand</string>
+    <string name="text_neuer_termin_d4e7b">Nieuwe afspraak</string>
+    <string name="text_schlieen_44424">Sluiten</string>
+    <string name="text_speichern_70b73">Opslaan</string>
+    <string name="text_sprache_b28f6">TAAL</string>
+    <string name="text_suche_fd281">Zoeken</string>
+    <string name="text_systemsprache_ef9a1">Systeemtaal</string>
+    <string name="text_tag_98296">Dag</string>
+    <string name="text_woche_7b220">Week</string>
+    <string name="text_zuruck_40806">Terug</string>
+</resources>

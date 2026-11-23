@@ -1,0 +1,75 @@
+name: Gimbo Kalender checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-java@v6.0.1
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: gradle
+      - name: Install Android 36 SDK
+        run: |
+          sdk_managers=("$ANDROID_HOME"/cmdline-tools/*/bin/sdkmanager)
+          sdk_manager="${sdk_managers[0]}"
+          test -x "$sdk_manager"
+          "$sdk_manager" 'platform-tools' 'platforms;android-36' 'build-tools;36.0.0'
+      - name: Verify source and translations
+        run: python3 scripts/check_source.py
+      - name: Build debug APK
+        id: build
+        run: ./gradlew assembleDebug --console=plain
+      - name: Run unit and UI tests
+        run: ./gradlew testDebugUnitTest --console=plain
+      - name: Run Android lint
+        if: always() && steps.build.outcome == 'success'
+        run: ./gradlew lintDebug --console=plain
+      - name: Save check reports
+        if: always()
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          retention-days: 7
+          name: Gimbo-Calendar-check-reports
+          if-no-files-found: ignore
+          path: |
+            app/build/reports/tests/
+            app/build/test-results/
+            app/build/reports/lint-results-debug.*
+      - name: Save debug APK
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          retention-days: 7
+          name: Gimbo-Calendar-ci-debug
+          path: app/build/outputs/apk/debug/app-debug.apk
+  release:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-java@v6.0.1
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: gradle
+      - name: Install Android 36 SDK
+        run: |
+          sdk_managers=("$ANDROID_HOME"/cmdline-tools/*/bin/sdkmanager)
+          sdk_manager="${sdk_managers[0]}"
+          test -x "$sdk_manager"
+          "$sdk_manager" 'platform-tools' 'platforms;android-36' 'build-tools;36.0.0'
+      - name: Verify optimized unsigned release bundle
+        run: ./gradlew bundleRelease --console=plain
+      - name: Save release bundle
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          retention-days: 7
+          name: Gimbo-Calendar-ci-release
+          path: app/build/outputs/bundle/release/app-release.aab

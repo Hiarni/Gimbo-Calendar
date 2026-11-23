@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gimbo_4d5fe285ee1a">Ny anteckning</string>
+    <string name="gimbo_4e1e15e17610">Kategorier</string>
+    <string name="gimbo_5aab5a8bd851">Tillsammans</string>
+    <string name="gimbo_6e5d3eca855c">Anteckningsblock</string>
+    <string name="gimbo_7e458d013900">Anteckningar</string>
+    <string name="gimbo_b70135a46abd">Checklista</string>
+    <string name="gimbo_cb27327d0207">Översikt</string>
+    <string name="next_b1cfc8318a">Dela</string>
+    <string name="next_c667f1f22a">Uppgifter</string>
+    <string name="settings_label">Inställningar</string>
+    <string name="text_abbrechen_07af7">Avbryt</string>
+    <string name="text_agenda_891e9">Agenda</string>
+    <string name="text_alle_4c7a9">Alla</string>
+    <string name="text_bearbeiten_104f3">Redigera</string>
+    <string name="text_entfernen_f78b6">Radera</string>
+    <string name="text_feiertag_ad6e4">Helgdag</string>
+    <string name="text_heute_1ab33">Idag</string>
+    <string name="text_hinzufugen_f0d37">Lägg till</string>
+    <string name="text_kalender_33fe9">Kalender</string>
+    <string name="text_monat_da136">Månad</string>
+    <string name="text_neuer_termin_d4e7b">Ny händelse</string>
+    <string name="text_schlieen_44424">Stäng</string>
+    <string name="text_speichern_70b73">Spara</string>
+    <string name="text_sprache_b28f6">SPRÅK</string>
+    <string name="text_suche_fd281">Sök</string>
+    <string name="text_systemsprache_ef9a1">Systemspråk</string>
+    <string name="text_tag_98296">Dag</string>
+    <string name="text_woche_7b220">Vecka</string>
+    <string name="text_zuruck_40806">Tillbaka</string>
+</resources>

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import argparse
-import math
 from PIL import Image, ImageDraw, ImageFont
 
 root = Path(__file__).resolve().parents[1]
@@ -10,34 +9,39 @@ parser.add_argument('--regular-font', default='/usr/share/fonts/truetype/dejavu/
 parser.add_argument('--bold-font', default='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf')
 args = parser.parse_args()
 output = root / 'docs/store'
-source = Image.open(root / 'scripts/assets/gimbo-calendar-mark.png').convert('RGBA')
-alpha = source.getchannel('A')
-bounds = alpha.point(lambda value: 255 if value >= 16 else 0).getbbox()
-cx = (bounds[0] + bounds[2] - 1) / 2
-cy = (bounds[1] + bounds[3] - 1) / 2
-pixels = alpha.load()
-radius = max(math.hypot(x - cx, y - cy) for y in range(bounds[1], bounds[3]) for x in range(bounds[0], bounds[2]) if pixels[x, y] >= 16)
+res = root / 'app/src/main/res'
+mark = Image.open(root / 'scripts/assets/gimbo-calendar-mark.png').convert('RGBA')
+monochrome = Image.open(root / 'scripts/assets/gimbo-calendar-monochrome.png').convert('RGBA')
+corners = [(12, 10, 20), (16, 24, 54), (82, 46, 130), (40, 66, 140)]
 
-def mark(target_radius):
-    size = round(source.width * target_radius / radius)
-    scale = size / source.width
-    artwork = source.resize((size, round(source.height * scale)), Image.Resampling.LANCZOS)
-    canvas = Image.new('RGBA', (512, 512))
-    canvas.alpha_composite(artwork, (round(256 - cx * scale), round(256 - cy * scale)))
-    return canvas
 
-foreground = mark(164)
-foreground.save(root / 'app/src/main/res/drawable-nodpi/gimbo_calendar_foreground.png')
-icon = Image.new('RGBA', (512, 512), '#111525')
-icon.alpha_composite(mark(241))
+def gradient(size, inset):
+    steps = 64
+    small = Image.new('RGB', (steps, steps))
+    for y in range(steps):
+        for x in range(steps):
+            u = min(1, max(0, (x / (steps - 1) - inset) / (1 - 2 * inset)))
+            v = min(1, max(0, (y / (steps - 1) - inset) / (1 - 2 * inset))) ** 1.6
+            top = [a + (b - a) * u for a, b in zip(corners[0], corners[1])]
+            bottom = [a + (b - a) * u for a, b in zip(corners[2], corners[3])]
+            small.putpixel((x, y), tuple(round(a + (b - a) * v) for a, b in zip(top, bottom)))
+    return small.resize((size, size), Image.Resampling.BICUBIC).convert('RGBA')
+
+
+for name, image in [('foreground', mark), ('monochrome', monochrome), ('background', gradient(512, 1 / 6))]:
+    image.resize((512, 512), Image.Resampling.LANCZOS).save(res / f'drawable-nodpi/gimbo_calendar_{name}.png', optimize=True)
+icon = gradient(512, 0)
+icon.alpha_composite(mark.resize((768, 768), Image.Resampling.LANCZOS).crop((128, 128, 640, 640)))
 icon.convert('RGB').save(output / 'icon-512.png')
 rounded = icon.copy()
-rounded.putalpha(Image.open(root / 'scripts/assets/gimbo-calendar-icon-mask.png').convert('L'))
+corner = Image.new('L', (2048, 2048), 0)
+ImageDraw.Draw(corner).rounded_rectangle((0, 0, 2047, 2047), radius=464, fill=255)
+rounded.putalpha(corner.resize((512, 512), Image.Resampling.LANCZOS))
 rounded.save(output / 'icon-rounded-512.png')
 for density, size in [('mdpi', 48), ('hdpi', 72), ('xhdpi', 96), ('xxhdpi', 144), ('xxxhdpi', 192)]:
-    directory = root / f'app/src/main/res/mipmap-{density}'
-    directory.mkdir(parents=True, exist_ok=True)
-    rounded.resize((size, size), Image.Resampling.LANCZOS).save(directory / 'ic_launcher.png')
+    rounded.resize((size, size), Image.Resampling.LANCZOS).save(res / f'mipmap-{density}/ic_launcher.png')
+
+
 def phone(locale, name, height):
     shot = Image.open(root / 'docs/screenshots' / locale / name).convert('RGBA')
     shot = shot.resize((round(shot.width * height / shot.height), height), Image.Resampling.LANCZOS)

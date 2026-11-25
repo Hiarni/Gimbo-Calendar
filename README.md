@@ -10,7 +10,7 @@
 
 `0.9.0-alpha` · Android 10+ · Kotlin & Jetpack Compose
 
-[**APK herunterladen**](../../releases/latest)
+[**APK herunterladen**](../../releases/latest) · [Änderungen](CHANGELOG.md)
 
 </div>
 
